@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'ANTIQUA';
+    src: url("../../../Arquivos/font/Chantelli_Antiqua.ttf");
+}
+.Header{
+    border: 2px solid red;
+    text-align: center;
+    color: white;
+    background: rgb(31, 11, 31);
+}
+.Footer{
+    border: 2px solid red;
+    text-align: center;
+    color: white;
+    background: rgb(94, 48, 94);
+}
+.SideBar{
+    border: 2px solid transparent;
+    width: 8%;
+    margin-top: 10px;
+    margin-left: 1vh;
+    border-radius: 2vh;
+    position: absolute;
+}
+.SideBar > a{
+    display: block;
+    background-image: url(https://i.pinimg.com/originals/06/d0/2d/06d02d499b1605aa64687391224a1735.gif);
+    -webkit-background-clip: text;
+    background-position: center;
+    color: transparent;
+    font-size: 3vh;
+    filter: drop-shadow(0.1vh 0.1vh 0.1vh yellow);
+    text-decoration: none;
+    font-family: ANTIQUA;
+}
