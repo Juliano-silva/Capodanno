@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Lovelyn';
+  src: url('../../Arquivos/font/Lovelyn.otf');
+}
 *{
   margin: 0;
   padding: 0;
@@ -8,13 +12,21 @@ body{
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  font-family: 'Lovelyn';
 }
 #Corpo{
-  border: 2px solid black;
-  background: #0e0c27;
+  background:#28364E;
   color: white;
   width: 80%;
-  height: 100vh;
+  height: 120vh;
   margin: auto;
   text-align: center;
+  overflow: auto;
+}
+#Corpo::-webkit-scrollbar{
+  width: 0px;
+}
+li > .thumb {
+  width: 0px;
+  display: none;
 }

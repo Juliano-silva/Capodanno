@@ -2,23 +2,41 @@
     font-family: 'ANTIQUA';
     src: url("../../../Arquivos/font/Chantelli_Antiqua.ttf");
 }
+@font-face {
+    font-family: 'CDTYPE';
+    src: url("../../../Arquivos/font/CDTYPE.otf");
+}
+/* Header */
 .Header{
-    border: 2px solid red;
+    border: 2px solid transparent;
     text-align: center;
     color: white;
-    background: rgb(31, 11, 31);
+    background: #2c3d5a;
+    height: 7vh;
+}
+.Header > h1 > img{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    margin-top: 0.4vh;
+    position: absolute;
+    margin-left: -6vh;
+}
+.Header > h1{
+    font-size: 5vh;
+    font-family: 'ANTIQUA';
 }
 .Footer{
-    border: 2px solid red;
+    border: 2px solid transparent;
     text-align: center;
     color: white;
-    background: rgb(94, 48, 94);
+    background:#2c3d5a;
 }
 .SideBar{
     border: 2px solid transparent;
     width: 8%;
-    margin-top: 10px;
-    margin-left: 1vh;
+    margin-top: 1vh;
+    margin-left: 0.3vh;
     border-radius: 2vh;
     position: absolute;
 }
@@ -28,8 +46,189 @@
     -webkit-background-clip: text;
     background-position: center;
     color: transparent;
-    font-size: 3vh;
+    font-size: 5vh;
     filter: drop-shadow(0.1vh 0.1vh 0.1vh yellow);
     text-decoration: none;
-    font-family: ANTIQUA;
+    font-family: 'CDTYPE';
+}
+/* Home */
+.HomeImg{
+    width: 100%;
+    height: 80vh;
+}
+.Home > h1{
+    font-size: 8vh;
+    text-transform: uppercase;
+    text-shadow: 0.3vh 0.3vh 0.3vh #252939;
+    color:#F09819;;
+    margin-top: 20px;
+}
+.Home > p{
+    font-size: 4vh;
+    color: #d3d0cc;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.Home > span{
+    display: block;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    animation: Carrossel 20s alternate infinite;
+}
+@keyframes Carrossel {
+    0%{
+        background-image: url(../../../Arquivos/1.jpeg);
+    }
+    25%{
+        background-image: url(../../../Arquivos/2.jpeg);
+    }
+    50%{
+        background-image: url(../../../Arquivos/3.jpeg);
+    }
+    75%{
+        background-image: url(../../../Arquivos/4.jpeg);
+    }
+    100%{
+        background-image: url(../../../Arquivos/5.jpeg);
+    }
+}
+/* Adicionar */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.Inputs{
+}
+.Inputs > input::placeholder{
+    color: whitesmoke;
+}
+.Inputs > input{
+    all: unset;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 2vh;
+    background:#974063;
+    color: whitesmoke;
+    border-radius: 2vh;
+    height: 3vh;
+    width: 80%;
+}
+.Button{
+    all: unset;
+    display: block;
+    border: 2px solid #974063;
+    background: #18191A;
+    margin: auto;
+    margin-top: 2vh;
+    width: 10%;
+    font-size: 2vh;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+.Button:hover{
+    filter: invert(1);
+    transition: .2s;
+}
+.Clear{
+    all: unset;
+    display: block;
+    border: 2px solid #ca2f6d;
+    height: 2.5vh;
+    background: #18191A;
+    margin: auto;
+    margin-top: 2vh;
+    width: 10%;
+    font-size: 2vh;
+    cursor: pointer;
+}
+.Title > li > button{
+    all: unset;
+    margin-top: 10px;
+}
+li{
+    list-style: none;
+}
+.Title > li > h1{
+    font-size: 3vh;
+}
+.Title{
+    border: 2px solid transparent;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+}
+/* Contéudo */
+.CardUL{
+    border-radius: 1vh;
+    border: 2px solid sandybrown ;
+    background: #18191A;
+    width: 35vh;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    display: inline-block;
+}
+.Card > h1{
+    color: #d3d0cc;
+    font-size: 5vh;
+}
+.Card > p{
+    font-size: 2vh;
+}
+.Card > h2{
+    color: greenyellow;
+    font-size: 3vh;
+}
+.Card > img{
+    width: 100%;
+}
+/* Portfolio */
+.Portfolio{
+    border: 2px solid transparent;
+    width: 80%;
+    margin: auto;
+}
+.Portfolio > h1{
+    font-size: 10vh;
+    text-shadow: 0.1vh 0.1vh 0.1vh #6F5ADC;
+    color: #F09819;
+}
+.Portfolio > h1:nth-child(4){
+    color: #6F5ADC;
+    font-size: 6vh;
+    margin-top: 4vh;
+}
+.Portfolio > h1 > span{
+    font-size: 12vh;
+    color: #974063;
+}
+.Portfolio > a{
+    color:#974063;
+    text-shadow: 0.1vh 0.1vh 0.1vh #6F5ADC;
+    font-size: 3vh;
+    text-decoration: none;
+}
+.Portfolio > p{
+    font-size: 5vh;
+    text-shadow: 0.1vh 0.1vh 0.1vh #6F5ADC;
+    text-transform: capitalize;
+    color:#F09819;
+}
+.Portfolio > a > img{
+    filter: drop-shadow(0.4vh 0.4vh 0.4vh #6F5ADC);
+    display: block;
+    width: 10vh;
+    margin-top: 2vh;
+    margin-left: 46%;
 }
