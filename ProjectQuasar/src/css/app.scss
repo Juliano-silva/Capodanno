@@ -1,1 +1,253 @@
-// app global css in SCSS form
+@font-face {
+  font-family:'Lovelyn' ;
+  src: url('../../../Arquivos/font/Lovelyn.otf');
+}
+@font-face {
+  font-family: 'CDTYPE';
+  src: url(../../../Arquivos/font/CDTYPE.otf);
+}
+// Tudo
+*{
+  margin: 0;
+  padding: 0;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+body{
+  background-image: url(../../../Arquivos/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: aliceblue;
+  font-family: 'Lovelyn';
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+  width: 0px;
+}
+#Header,#Footer{
+  border: 2px solid transparent;
+  text-align: center;
+  background: #304263;
+  height: 7vh;
+  border: 2px solid transparent;
+}
+#Header > h1,#Footer > h1{
+  background-image: url("https://i.pinimg.com/originals/f7/e4/8b/f7e48b80ce8ae125426926d96e1f5c51.gif");
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  filter: drop-shadow(0.1vh 0.1vh 0.1vh $secondary);
+  font-style: italic;
+  font-size: 8vh;
+  font-weight: bold;
+  line-height: 0;
+}
+#Footer > h1{
+  line-height: 0.8;
+}
+#Footer{
+  height: 8.2vh;
+}
+#Header > h1 > img{
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  margin-left: -6vh;
+}
+#Sidebar{
+  border: 2px solid transparent;
+  width: 10%;
+  position: fixed;
+  line-height: 1.5;
+}
+#Sidebar > a{
+  background-image: url("https://i.pinimg.com/originals/f7/e4/8b/f7e48b80ce8ae125426926d96e1f5c51.gif");
+  -webkit-background-clip: text;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0.1vh 0.1vh 0.1vh $negative);
+  display: block;
+  text-decoration: none;
+  font-size: 3.5vh;
+}
+hr{
+  border: 0.1vh solid whitesmoke;
+  margin-top: 3vh;
+  height: 0.5vh;
+  background: whitesmoke;
+}
+// Contéudo
+#Corpo{
+  background: $positive;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+#Image{
+  display: block;
+  width: 100%;
+  height: 85vh;
+  animation: Carousel 20s alternate infinite;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes Carousel {
+  0%{
+    background-image: url(../../../Arquivos/1.jpeg);
+  }
+  25%{
+    background-image: url(../../../Arquivos/2.jpeg);
+  }
+  50%{
+    background-image: url(../../../Arquivos/3.jpeg);
+  }
+  75%{
+    background-image: url(../../../Arquivos/4.jpeg);
+  }
+  100%{
+    background-image: url(../../../Arquivos/5.jpeg);
+  }
+}
+#SobreHome > h1{
+  color: $secondary;
+  font-size: 8vh;
+  width: 100%;
+  line-height: 0.4vh;
+  margin-top: 4vh;
+  text-shadow: 0.2vh 0.1vh 0.2vh $negative;
+  font-weight: bold;
+  font-style: oblique;
+}
+#SobreHome  > p{
+  color: $dark-page;
+  font-size: 4vh;
+  width: 80%;
+  margin: auto;
+  line-height: 1;
+  margin-top: 5vh;
+}
+#Adicionar > form > input::placeholder{
+  color: $dark-page;
+}
+#Adicionar > form > input{
+  all: unset;
+  border: 0.4vh solid $secondary;
+  background: $info;
+  margin-top: 2.5vh;
+  width: 60%;
+  border-radius: 2vh;
+  height: 4vh;
+  font-size: 3vh;
+  color: $dark-page;
+  line-height: 0.1vh;
+}
+#Adicionar > form > input:nth-child(9){
+  border: 0.4vh solid white;
+  width: 10%;
+  cursor: pointer;
+}
+#Adicionar > form > input:nth-child(9):hover{
+  filter: invert(1);
+}
+#Adicionar > form > h1{
+  color: $secondary;
+  font-size: 8.5vh;
+  line-height: 1;
+  text-shadow: 0.2vh 0.1vh 0.2vh $negative;
+}
+#ContainerVue{
+  display: inline-block;
+}
+#CardLi{
+  border-radius: 1vh;
+  border: 0.4vh solid sandybrown ;
+  background: #18191A;
+  width: 35vh;
+  height: 100%;
+  margin-left: 2vh;
+  margin-top: 2vh;
+}
+#Card > h1{
+  font-size: 6vh;
+  overflow: auto;
+  word-wrap: break-word;
+  height: 10vh;
+  line-height: 1.5;
+}
+#Card > h2{
+  color: greenyellow;
+  margin-top: -1vh;
+  font-size: 7vh;
+  line-height: 0.8;
+  word-wrap: break-word;
+}
+#Card > p{
+  margin-top: 1vh;
+  font-size: 2vh;
+  text-align: justify;
+  margin-left: 4px;
+}
+#Card > h1::-webkit-scrollbar,#Card > p::-webkit-scrollbar{
+  width: 0px;
+}
+#Card > img{
+  width: 100%;
+  height: 40vh;
+  margin-top: -2vh;
+}
+.Apagar{
+  display: block;
+  border: 0.4vh solid #6F5ADC;
+  color: $secondary;
+  background: #362360;
+  width: 60%;
+  margin: auto;
+  border-radius: 2vh;
+  cursor: pointer;
+  font-size: 3vh;
+}
+.Apagar:hover{
+  filter: invert(1);
+}
+#Portfolio > div > h1{
+  font-size: 10vh;
+  color: $secondary;
+  text-shadow: 0.5vh 0.5vh 0.5vh $primary;
+  line-height: 1;
+}
+#Portfolio > div > p{
+  font-size: 5vh;
+  line-height: 0.8;
+  color: $style;
+  text-shadow: 0.1vh 0.1vh 0.1vh $secondary;
+}
+#Portfolio > div > h1 > span{
+  color: $negative;
+}
+#Portfolio > div > a > img{
+  display: block;
+  margin: auto;
+  width: 20vh;
+  margin-top: 2vh;
+}
+#Portfolio > div > a{
+  text-decoration: none;
+  color: $negative;
+  font-size: 5vh;
+  line-height: 0;
+  text-shadow: 0.1vh 0.1vh 0.1vh $dark-page;
+}

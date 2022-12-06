@@ -1,6 +1,5 @@
 import style from './Style.module.css'
 import React, { Component } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 export default function Home(){
     return(
       <div className={style.Home}>
