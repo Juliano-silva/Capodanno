@@ -1,9 +1,10 @@
 import React from "react"
 import { View,Text } from "react-native"
+import {Footer2,FooterText} from '../Style'
 export default function Footer(){
     return(
-        <View>
-            <Text>Footer</Text>
-        </View>
+        <Footer2>
+            <FooterText>JSA</FooterText>
+        </Footer2>
     )
 }
